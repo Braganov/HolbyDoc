@@ -23,7 +23,7 @@ Implémentation possible avec:
 - Frontend: HTML/CSS/JavaScript
 - Backend: Flask ou Django
 - Format de contenu: Markdown
-- Base de données: NoSQL
+- Base de données: SQLAlchemy
 
 ## Pour Commencer
 *À venir*

@@ -36,7 +36,7 @@ HolbyDoc centralizes and structures essential resources, facilitating autonomous
 
 **Reasons for Selection:**  
 - Direct utility: addresses a real need for Holberton School students  
-- Technical feasibility: implementation possible with HTML/CSS/JS, Flask or Django, Markdown, NoSQL database  
+- Technical feasibility: implementation possible with HTML/CSS/JS, Flask or Django, Markdown, SQLAlchemy database  
 - Strong connection to the current training program  
 - Scalability: possibility to add advanced search, community contributions, tagging, etc.  
 - Potential impact: reusable tool for other cohorts and campuses
