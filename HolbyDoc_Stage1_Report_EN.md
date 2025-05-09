@@ -108,3 +108,7 @@ mindmap
 ## 5. Working Folder URL
 
 **[PORTFOLIO PROJECT](https://github.com/Braganov/HolbyDoc.git)**
+
+---
+
+*[Voir la version française](./HolbyDoc_Stage1_Report_FR.md)*
