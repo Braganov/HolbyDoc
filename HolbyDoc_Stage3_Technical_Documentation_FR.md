@@ -30,7 +30,6 @@
 
 #### Won't Have (pour la MVP)
 - Système de messagerie instantanée entre utilisateurs
-- Intégration de paiement pour les cours premium
 - Support multilingue complet
 
 ## 2. Architecture du Système

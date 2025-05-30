@@ -30,7 +30,6 @@
 
 #### Won't Have (for MVP)
 - Instant messaging system between users
-- Payment integration for premium courses
 - Complete multilingual support
 
 ## 2. System Architecture
