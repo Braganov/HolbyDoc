@@ -1,7 +1,7 @@
 from holbydoc.models import User, Lesson, Course
 from flask import render_template, url_for, flash, redirect
 from holbydoc.forms import RegistrationForm, LoginForm
-from holbydoc import app
+from holbydoc import app, bcrypt, db
 
 
 lessons = [
@@ -92,8 +92,18 @@ def about():
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode("utf-8")
+        user = User(
+            fname=form.fname.data,
+            lname=form.lname.data,
+            username=form.username.data,
+            email=form.email.data,
+            password=hashed_password,
+        )
+        db.session.add(user)
+        db.session.commit()
         flash(f"Account created successfully for {form.username.data}", "success")
-        return redirect(url_for("home"))
+        return redirect(url_for("login"))
     return render_template("register.html", title="Register", form=form)
 
 

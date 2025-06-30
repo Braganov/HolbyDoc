@@ -7,7 +7,7 @@ class User(db.Model):
     lname = db.Column(db.String(25), nullable=False)
     username = db.Column(db.String(25), unique=True, nullable=False)
     email = db.Column(db.String(125), unique=True, nullable=False)
-    image_file = db.Column(db.String(20), nullable=False, default="default.webp")
+    image_file = db.Column(db.String(20), nullable=False, default="default.jpg")
     password = db.Column(db.String(60), nullable=False)
     lessons = db.relationship("Lesson", backref="author", lazy=True)
 
@@ -21,7 +21,7 @@ class Lesson(db.Model):
     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     content = db.Column(db.Text, nullable=False)
     thumbnail = db.Column(
-        db.String(20), nullable=False, default="default_thumbnail.webp"
+        db.String(20), nullable=False, default="default_thumbnail.jpg"
     )
     slug = db.Column(db.String(32), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
@@ -35,7 +35,7 @@ class Course(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50), unique=True, nullable=False)
     description = db.Column(db.String(150), nullable=False)
-    icon = db.Column(db.String(20), nullable=False, default="default_icon.webp")
+    icon = db.Column(db.String(20), nullable=False, default="default_icon.jpg")
     lessons = db.relationship("Lesson", backref="course_name", lazy=True)
 
     def __repr__(self):

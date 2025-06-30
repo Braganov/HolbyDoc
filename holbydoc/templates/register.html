@@ -1,6 +1,6 @@
 {%extends "layout.html"%}
 {% block content%}
-<div class="container mt-auto align-items-center">
+<div class="container my-5 border">
     <form action="" method="POST">
         {{ form.hidden_tag()}}
         <fieldset class="form-group">
@@ -89,7 +89,7 @@
                 {% endif %}
 
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 {{ form.submit(class='btn btn-outline-info')}}
             </div>
         </fieldset>
