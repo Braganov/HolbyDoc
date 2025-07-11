@@ -1,60 +1,54 @@
-# Python bytecode files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Python virtual environment
-HolbyDoc/
+*.so
+.Python
 venv/
 env/
-ENV/
-.env
-.venv
-
-# Distribution / packaging
-dist/
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
-
-# IDE specific files
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# Flask specific
-instance/
-.webassets-cache
-
-# SQLite database files
-*.sqlite
-*.db
-
-# Logs
-logs/
-*.log
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Documentation build
-_build/
-_static/
-_templates/
-
-# Media and data files that should be tracked separately
-/media/
-/data/
+.installed.cfg
+*.egg
 
 # Environment variables
 .env
-.flaskenv
+.env.*
 
-# Generated static files
-/static/generated/
+# Database
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+*.swp
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Media files
+holbydoc/static/user_pics/*
+!holbydoc/static/user_pics/default.png
+holbydoc/static/course_icons/*
+holbydoc/static/lesson_thumbnails/*
+holbydoc/static/media/*
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
