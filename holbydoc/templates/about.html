@@ -1,4 +1,104 @@
-{%extends "layout.html"%}
-{% block content%}
-    <h1>About Page</h1>
+{% extends "layout.html" %}
+{% block content %}
+<section class="about-hero bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 mb-4">About HolbyDoc</h1>
+                <p class="lead mb-4">A platform born from real student needs at Holberton School</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-inspiration py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-4">The Story Behind HolbyDoc</h2>
+                <p class="lead">
+                    As a Holberton School student, I experienced firsthand the challenges of finding organized and clear documentation. Time was often wasted searching through scattered resources, making the learning process more difficult than necessary.
+                </p>
+                <p>
+                    HolbyDoc was born from this experience - a solution to centralize resources, explanations, summaries, and practical guides related to Holberton School training. It's more than just a Portfolio Project; it's a tool designed to make learning more efficient for all students.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="key-features py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">What Makes HolbyDoc Special</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Centralized Resources</h3>
+                        <p class="card-text">All your learning materials in one place, properly organized and easily accessible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Clear Structure</h3>
+                        <p class="card-text">Logical organization of content with intuitive navigation and filtering options.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Community-Driven</h3>
+                        <p class="card-text">Platform designed to grow with contributions from the Holberton community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="developer-info py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Meet the Developer</h2>
+                <img src="{{ url_for('static', filename='user_pics/68fb1dd8686d7113.png') }}" alt="Ibrahim Houmaidi" class="rounded-circle mb-4" style="width: 150px;">
+                <h3 class="h4 mb-3">Ibrahim Houmaidi</h3>
+                <p class="mb-4">Full Stack Developer | Holberton School Student</p>
+                <div class="social-links mb-4">
+                    <a href="https://github.com/Braganov" class="btn btn-dark mx-2" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/ibrahim-houmaidi" class="btn btn-primary mx-2" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://twitter.com/ibrahim_houmaidi" class="btn btn-info mx-2" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-links py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Project Resources</h2>
+                <div class="mb-4">
+                    <a href="https://github.com/Braganov/HolbyDoc" class="btn btn-lg btn-outline-dark" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <p>
+                    This project is part of the Portfolio Project at 
+                    <a href="https://www.holbertonschool.com/" target="_blank">Holberton School</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}
