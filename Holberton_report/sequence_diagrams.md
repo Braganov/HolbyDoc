@@ -76,17 +76,6 @@ sequenceDiagram
 - **Jinja2 Templates**
   - Moteur de template pour Flask
   - Fonctionnalités principales utilisées :
-    ```html
-    {# Héritage de templates #}
-    {% extends "layout.html" %}
-    {% block content %}{% endblock %}
-
-    {# Variables et expressions #}
-    {{ title }}
-    {{ url_for('static', filename='image.jpg') }}
-
-    {# Conditions #}
-    {% if current_user.is_authenticated %}
         <a href="{{ url_for('profile') }}">Profile</a>
     {% endif %}
 
@@ -135,10 +124,3 @@ sequenceDiagram
   - Support markdown
   - Upload d'images
   - Plugins personnalisables
-
-### Gestion des Fichiers Statiques
-- **Dossiers statiques**:
-  - course_icons/ : Images des cours
-  - lesson_thumbnails/ : Miniatures des leçons
-  - user_pics/ : Photos de profil
-  - media/ : Images des contenus (CKEditor)
