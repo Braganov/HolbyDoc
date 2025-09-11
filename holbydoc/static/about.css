@@ -1,0 +1,113 @@
+/* About Page Styles */
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../static/showcase.svg') center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.about-hero h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-hero .lead {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Project Inspiration */
+.project-inspiration {
+    background-color: white;
+}
+
+.project-inspiration .lead {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Key Features */
+.key-features .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.key-features .card:hover {
+    transform: translateY(-10px);
+}
+
+.key-features .card-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Developer Info */
+.developer-info img {
+    border: 5px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.developer-info img:hover {
+    transform: scale(1.05);
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Project Links */
+.project-links .btn {
+    padding: 15px 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.project-links .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 60px 0;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-hero .lead {
+        font-size: 1.2rem;
+    }
+
+    .key-features .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
