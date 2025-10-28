@@ -5,7 +5,6 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/)
 [![Flask](https://img.shields.io/badge/flask-2.0.3-green.svg)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
 
@@ -23,7 +22,6 @@
 - [Roadmap](#-roadmap)
 - [Contribution](#-contribution)
 - [Auteur](#-auteur)
-- [Licence](#-licence)
 
 ---
 
@@ -407,16 +405,10 @@ Les contributions sont les bienvenues ! Pour contribuer :
 ## 👨‍💻 Auteur
 
 **Ibrahim Houmaidi**
-- Formation : Holberton School Paris - Promo C17 (2023-2024)
+- Formation : Holberton School Rennes - Promo C24 (2024-2025)
 - Certification : RNCP5 "Développeur Web et Web Mobile"
 - GitHub : [@Braganov](https://github.com/Braganov)
 - Email : ibrahim.houmaidi@example.com
-
----
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ---
 
