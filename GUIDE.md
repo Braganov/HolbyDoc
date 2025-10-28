@@ -1,127 +1,127 @@
-# Guide d'Installation et d'Utilisation de HolbyDoc
+# HolbyDoc Installation and Usage Guide
 
-## Prérequis
+## Prerequisites
 - Python 3.11
-- pip (gestionnaire de paquets Python)
-- Git (pour cloner le repository)
+- pip (Python package manager)
+- Git (to clone the repository)
 
 ## Installation
 
-1. Cloner le repository :
+1. Clone the repository:
 ```bash
-git clone <url_du_repo>
+git clone <repository_url>
 cd HolbyDoc
 ```
 
-2. Créer un environnement virtuel Python :
+2. Create a Python virtual environment:
 ```bash
 python3.11 -m venv venv
 ```
 
-3. Activer l'environnement virtuel :
-- Sur Linux/Mac :
+3. Activate the virtual environment:
+- On Linux/Mac:
 ```bash
 source venv/bin/activate
 ```
-- Sur Windows :
+- On Windows:
 ```bash
 .\venv\Scripts\activate
 ```
 
-4. Installer les dépendances :
+4. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-5. Créer la base de données :
+5. Create the database:
 ```bash
 python create_db.py
 ```
 
 ## Configuration
 
-1. Variables d'environnement (optionnel) :
-- Créer un fichier `.env` à la racine du projet
-- Ajouter les variables nécessaires :
+1. Environment variables (optional):
+- Create a `.env` file at the project root
+- Add the necessary variables:
 ```
-SECRET_KEY=votre_clé_secrète
+SECRET_KEY=your_secret_key
 SQLALCHEMY_DATABASE_URI=sqlite:///holbydoc.db
 ```
 
-## Lancement de l'Application
+## Launching the Application
 
-1. Démarrer le serveur de développement :
+1. Start the development server:
 ```bash
 python run.py
 ```
 
-2. Accéder à l'application :
-- Ouvrir un navigateur web
-- Aller à l'adresse : http://localhost:5000
+2. Access the application:
+- Open a web browser
+- Go to: http://localhost:5000
 
-## Utilisation
+## Usage
 
-### Création d'un Compte
-1. Cliquer sur "Register" dans la barre de navigation
-2. Remplir le formulaire avec :
-   - Prénom
-   - Nom
-   - Nom d'utilisateur
+### Creating an Account
+1. Click "Register" in the navigation bar
+2. Fill out the form with:
+   - First name
+   - Last name
+   - Username
    - Email
-   - Mot de passe (8 caractères minimum, avec majuscules, minuscules, chiffres et caractères spéciaux)
+   - Password (minimum 8 characters, with uppercase, lowercase, numbers, and special characters)
 
-### Création d'un Cours
-1. Se connecter à votre compte
-2. Aller dans le "Dashboard"
-3. Cliquer sur "New Course"
-4. Remplir les informations du cours :
-   - Titre
+### Creating a Course
+1. Log in to your account
+2. Go to "Dashboard"
+3. Click "New Course"
+4. Fill in the course information:
+   - Title
    - Description
-   - Icône (format jpg ou png)
+   - Icon (jpg or png format)
 
-### Création d'une Leçon
-1. Se connecter à votre compte
-2. Aller dans le "Dashboard"
-3. Sélectionner "New Lesson"
-4. Remplir les informations :
-   - Sélectionner le cours
-   - Titre de la leçon
+### Creating a Lesson
+1. Log in to your account
+2. Go to "Dashboard"
+3. Select "New Lesson"
+4. Fill in the information:
+   - Select the course
+   - Lesson title
    - Slug (URL-friendly)
-   - Contenu (utilisant l'éditeur CKEditor)
-   - Image de couverture
+   - Content (using CKEditor)
+   - Cover image
 
-## Fonctionnalités
+## Features
 
-- Système d'authentification complet
-- Gestion des cours et des leçons
-- Éditeur de texte riche (CKEditor)
-- Système de fichiers pour les images
-- Interface responsive
+- Complete authentication system
+- Course and lesson management
+- Rich text editor (CKEditor)
+- Image file system
+- Responsive interface
 
-## Résolution des Problèmes Courants
+## Common Troubleshooting
 
-1. Erreur de base de données :
-   - Vérifier que `create_db.py` a été exécuté
-   - Vérifier les permissions du dossier
+1. Database error:
+   - Verify that `create_db.py` has been executed
+   - Check folder permissions
 
-2. Problèmes d'installation des dépendances :
-   - Vérifier la version de Python (3.11 recommandée)
-   - Mettre à jour pip : `pip install --upgrade pip`
+2. Dependency installation issues:
+   - Check Python version (3.11 recommended)
+   - Update pip: `pip install --upgrade pip`
 
-3. Problèmes d'upload d'images :
-   - Vérifier les permissions du dossier static/user_pics
-   - Vérifier que le format est bien jpg ou png
+3. Image upload problems:
+   - Check permissions of the static/user_pics folder
+   - Verify the format is jpg or png
 
 ## Support
 
-Pour toute question ou problème, vous pouvez :
-1. Ouvrir une issue sur GitHub
-2. Contacter l'équipe de développement
-3. Consulter la documentation technique dans le dossier Holberton_report/
+For any questions or issues, you can:
+1. Open an issue on GitHub
+2. Contact the development team
+3. Consult the technical documentation in the Holberton_report/ folder
 
-## Sécurité
+## Security
 
-- Ne jamais partager votre SECRET_KEY
-- Utiliser des mots de passe forts
-- Mettre à jour régulièrement les dépendances
-- Faire attention aux permissions des fichiers
+- Never share your SECRET_KEY
+- Use strong passwords
+- Regularly update dependencies
+- Pay attention to file permissions
